@@ -24,9 +24,9 @@
             "metadata": {
                 "description": "VM Size"
             },
-            "defaultValue": "Standard_GS5 (448 GB, Certified)",
+            "defaultValue": "Standard_M32-8ms",
             "allowedValues": [
-                "Standard_GS5 (448 GB, Certified)",
+                "Standard_M32-8ms",
                 "Standard_M64s (1 TB, Certified))",
                 "Standard_M64ms (1.7 TB, Certified))",
                 "Standard_M128s (2 TB, Certified))",
@@ -38,7 +38,7 @@
         },   
         "NetworkName": {
             "type": "string",
-            "defaultValue": "ra-sap-hana-vnet",
+            "defaultValue": "weu-sap-vnet001",
             "metadata": {
                 "description": "The HANA VNET"
             }
@@ -52,7 +52,7 @@
         },
         "HANASubnetName": {
             "type": "string",
-            "defaultValue": "SAPDataSubnet",
+            "defaultValue": "weu-sap-data-sub001",
             "metadata": {
                 "description": "The data subnet name"
             }
@@ -66,7 +66,7 @@
         },
         "ManagementSubnetName": {
             "type": "string",
-            "defaultValue": "SAPMgmtSubnet",
+            "defaultValue": "weu-sap-mgnt-sub001",
             "metadata": {
                 "description": "The management subnet name"
             }

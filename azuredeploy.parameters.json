@@ -1,60 +1,69 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "VMName": {
-            "value": "testVm"
-        },
-        "HANAJumpbox": {
-            "value": "yes"
-        },
-        "VMSize": {
-            "value": "Standard_GS5 (448 GB, Certified)"
-        },
-        "NetworkName": {
-            "value": "ra-sap-hana-vnet"
-        },
-        "addressPrefixes": {
-            "value": "10.0.0.0/16"
-        },
-        "HANASubnetName": {
-            "value": "SAPDataSubnet"
-        },
-        "HANASubnetPrefix": {
-            "value": "10.0.5.0/24"
-        },
-        "ManagementSubnetName": {
-            "value": "SAPMgmtSubnet"
-        },
-        "ManagementSubnetPrefix": {
-            "value": "10.0.6.0/24"
-        },
-        "customURI": {
-            "value": "https://yourblobname.blob.core.windows.net/yourContainerName"            
-        },
-        "VMUserName": {
-            "value": "testuser"
-        },
-        "VMPassword": {
-            "value": "YourPassword"
-                        },                    
-        "OperatingSystem": {
-            "value":  "SLES for SAP 12 SP3"
-        },
-        "HANASID": {
-            "value":  "H10"
-        },
-        "HANANumber": {
-            "value": "00"
-        },
-        "ExistingNetworkResourceGroup": {
-            "value": "no"
-        },
-        "IPAllocationMethod": {
-            "value": "Static"
-        },
-        "StaticIP": {
-          "value":  "10.0.5.4"
-        }               
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "VMName": {
+      "value": "GIAU701"
+    },
+    "HANAJumpbox": {
+      "value": "no"
+    },
+    "VMSize": {
+      "value": "Standard_M32-8ms"
+    },
+    "NetworkName": {
+      "value": "weu-sap-vnet001"
+    },
+    "addressPrefixes": {
+      "value": "10.0.0.0/16"
+    },
+    "HANASubnetName": {
+      "value": "weu-sap-data-sub001"
+    },
+    "HANASubnetPrefix": {
+      "value": "10.0.5.0/24"
+    },
+    "ManagementSubnetName": {
+      "value": "weu-sap-mgnt-sub001"
+    },
+    "ManagementSubnetPrefix": {
+      "value": "10.0.6.0/24"
+    },
+    "customURI": {
+      "value": " https://giaweusapsa001.blob.core.windows.net/source"
+    },
+    "VMUserName": {
+      "value": "giasapsvc01"
+    },
+    "VMPassword": {
+      "value": "AweS0me@PW18"
+    },
+    "OperatingSystem": {
+      "value": "SLES for SAP 12 SP3"
+    },
+    "HANASID": {
+      "value": "GIA99"
+    },
+    "HANANumber": {
+      "value": "00"
+    },
+    "ExistingNetworkResourceGroup": {
+      "value": "no"
+    },
+    "IPAllocationMethod": {
+      "value": "Dynamic"
+    },
+    "StaticIP": {
+      "value": "10.0.5.4"
+    },
+    "SubscriptionEmail": {
+      "value": ""
+    },
+    "SubscriptionID": {
+      "value": ""
+    },
+    "SMTUri": {
+      "value": ""
     }
+  }
 }
